@@ -1,0 +1,8 @@
+/_build
+/log
+/ebin
+/deps
+erl_crash.dump
+mix.lock
+etc/dev.config
+etc/test.config
