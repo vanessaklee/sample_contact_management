@@ -1,9 +1,9 @@
-defmodule Melnitz.Eligibility do
+defmodule Project.Eligibility do
   use Bitwise
   require Lager
 
-  alias Melnitz.Models.Eligibility
-  alias Melnitz.Contact
+  alias Project.Models.Eligibility
+  alias Project.Contact
 
   """
   Return flag for customer's eligibility mask

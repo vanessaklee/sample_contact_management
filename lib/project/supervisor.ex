@@ -1,15 +1,15 @@
-defmodule Melnitz.Supervisor do
+defmodule Project.Supervisor do
   use Supervisor.Behaviour
 
-  alias Melnitz.RedisWorkers, as: RW
+  alias Project.RedisWorkers, as: RW
 
   def start_link do
     :supervisor.start_link { :local, __MODULE__ }, __MODULE__, []
   end
 
   def init(_) do
-    tree = [ worker(Melnitz.EventManager, []),
-             supervisor(Melnitz.Index.Supervisor, []),
+    tree = [ worker(Project.EventManager, []),
+             supervisor(Project.Index.Supervisor, []),
              worker(RW.Update, []),
              worker(RW.Legacy, []),
              worker(RW.Delete, []) ]

@@ -1,4 +1,4 @@
-defmodule Melnitz.Models.Eligibility do
+defmodule Project.Models.Eligibility do
   use Ecto.Model
   table_name :contact_eligibility
   primary_key :contelig_id

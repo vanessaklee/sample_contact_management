@@ -1,8 +1,8 @@
-defmodule Melnitz.Mixfile do
+defmodule Project.Mixfile do
   use Mix.Project
 
   def project do
-    [ app: :melnitz,
+    [ app: :project,
       version: "0.1.7",
       deps: deps ]
   end
@@ -10,7 +10,7 @@ defmodule Melnitz.Mixfile do
   # Configuration for the OTP application
   def application do
     [ applications: [:lager, :hackney, :ecto],
-      mod: { Melnitz, [] } ]
+      mod: { Project, [] } ]
   end
 
   # Returns the list of dependencies in the format:
