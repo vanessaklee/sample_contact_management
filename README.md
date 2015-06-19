@@ -1,6 +1,6 @@
 # Contact Management
 
-This Contact Management tool is an otp application which provides contact search, read, create and update functionality.
+This Contact Management tool is an otp application designed to provide contact search, read, create and update functionality. This sample includes the eligibility model and functionality.
 
 ## My role
 
